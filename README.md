@@ -24,6 +24,10 @@
 
 ```bash
 cd nome-do-app
+```
+```bash
 npm install
+```
+```bash
 npm run dev
 ```
