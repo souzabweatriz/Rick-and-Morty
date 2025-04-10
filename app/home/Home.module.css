@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-size: cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 2rem;
+    gap: 2rem;
+    min-width: 100vh;
+    background-attachment: fixed;
+    background-image: url("../../public/space.jpg");
+  }
