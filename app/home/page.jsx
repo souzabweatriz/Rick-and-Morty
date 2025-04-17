@@ -39,7 +39,7 @@ export default function Home() {
         <div className={styles.container}>
             <ToastContainer 
             position="top-rigth"
-            autoClose={7500}
+            autoClose={2000}
             theme="light"
             />
             <h1 className={styles.title}>Rick and Morty Characters</h1>
