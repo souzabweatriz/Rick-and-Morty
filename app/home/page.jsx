@@ -31,6 +31,10 @@ export default function Home() {
         toast.info(`Você clicou em ${name}`);
     };
 
+    const handleFilterClick = () => {
+        toast.info(`o filtro foi reiniciado`);
+    };
+
     return (
         <div className={styles.container}>
             <ToastContainer 
@@ -41,7 +45,7 @@ export default function Home() {
             <div className={styles.controls}>
                 <input type="text" placeholder="Buscar por nome" value={search} onChange={(e) => setSearch(e.target.value)} className={styles.input} />
                 <button onClick={() => fetchCharacters(search.trim())} className={styles.buttonSearch}>Buscar</button>
-                <button onClick={() => { setSearch(""); fetchCharacters(); }} className={styles.buttonReset}>Resetar</button>
+                <button onClick={() => { setSearch(""); fetchCharacters(); handleFilterClick()}} className={styles.buttonReset}>Resetar</button>
             </div>
             {notFound && (
         <h1 className={styles.notFound}>Nenhum personagem encontrado 😢</h1>
@@ -52,7 +56,6 @@ export default function Home() {
                     key={char.id} 
                     character={char} 
                     onClick={() => handleCardClick(char.name)}
-                    
                     />
                 ))}
             </div>
