@@ -42,14 +42,15 @@ export default function Home() {
             autoClose={7500}
             theme="light"
             />
+            <h1 className={styles.title}>Rick and Morty Characters</h1>
             <div className={styles.controls}>
                 <input type="text" placeholder="Buscar por nome" value={search} onChange={(e) => setSearch(e.target.value)} className={styles.input} />
                 <button onClick={() => fetchCharacters(search.trim())} className={styles.buttonSearch}>Buscar</button>
                 <button onClick={() => { setSearch(""); fetchCharacters(); handleFilterClick()}} className={styles.buttonReset}>Resetar</button>
-            </div>
             {notFound && (
-        <h1 className={styles.notFound}>Nenhum personagem encontrado 😢</h1>
+            <h1 className={styles.notFound}>Não foi encontrado nenhum personagem com esse nome</h1>
       )}
+            </div>
             <div className={styles.grid}>
                 {characters.map((char) => (
                     <CharacterCard 

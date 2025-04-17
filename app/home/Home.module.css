@@ -24,6 +24,13 @@
     align-items: center;
   }
   
+  .title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
   .input {
     width: 300px;
     height: 4rem;
@@ -68,15 +75,19 @@
   
   .notFound {
     display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
-    color: rgb(8, 48, 87);
+    color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     width: 20rem;
-    height: 20rem;
+    height: 8rem;
+    margin-top: 2rem;
+    font-weight: 3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 2rem;
-    opacity: 0.6;
+    opacity: 0.4;
     border: 0.3rem groove;
   }
   
