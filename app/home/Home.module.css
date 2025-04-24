@@ -28,11 +28,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: azure;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .input {
-    width: 300px;
+    width: 25rem;
     height: 4rem;
     padding: 10px;
     border-radius: 10px;
@@ -43,7 +43,7 @@
     height: 40px;
     height: 3rem;
     border-radius: 8px;
-    background-color: rgb(37, 14, 130);
+    background-color: rgb(56, 26, 192);
     color: white;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -58,7 +58,7 @@
     width: 122px;
     height: 3rem;
     border-radius: 8px;
-    background-color: rgb(77, 9, 96);
+    background-color: rgb(125, 34, 150);
     color: white;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -101,14 +101,9 @@
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 
-  .pagination{
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0;
-  }
 
 .buttonSearch,
 .buttonReset,
@@ -136,7 +131,7 @@
 }
 
 .buttonNav {
-  background: linear-gradient(135deg, #2eb04a, #12b759);
+  background: linear-gradient(135deg, #d61091, #04055f);
 }
 
 .buttonNav:active {
@@ -152,10 +147,18 @@
 }
 
 .pageIndicator {
+  margin-top: 1rem;
   font-weight: bold;
   font-size: 1.5rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.306);
   padding: 8px 16px;
   border-radius: 10px;
+  font-weight: 100;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.buttons{
+  display: flex;
+  gap: 2rem;
 }

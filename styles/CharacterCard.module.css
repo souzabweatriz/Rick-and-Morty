@@ -3,6 +3,7 @@
     background-color:#ffffff;
     padding: 1rem;
     border-radius: 7px;
+    opacity: 0.8;
     text-align: center;
     transition: transform 0.25s;
     box-shadow: 0.5rem 0.5rem 1.5rem #010d04;
