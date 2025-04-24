@@ -23,9 +23,6 @@
 ### Instale as dependências 🖥️
 
 ```bash
-cd nome-do-app
-```
-```bash
 npm install
 ```
 ```bash
